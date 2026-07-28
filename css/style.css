@@ -1,0 +1,592 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+
+body{
+    margin:0;
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    background:black;
+
+}
+
+
+/*TOP Bar*/
+
+.topbar{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+
+    background: black;
+    padding: 0 2rem; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    z-index: 1000;
+}
+
+.topbar a{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.topbar img{
+
+    width:60px;
+    height:auto;
+
+    transition:.2s;
+}
+
+.topbar img:hover{
+
+    transform:scale(1.1);
+}
+
+/*Home*/
+
+.hero{
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    /* Move everything slightly above centre */
+    transform:translateY(-40px);
+}
+
+.name{
+    margin:0;
+    font-size:2rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    transform:translateY(-40px);
+
+}
+
+.menu{
+    display:flex;
+    gap:6rem;
+    margin-top:30px;
+}
+
+.menu img{
+    width:4rem;
+    height:auto;
+
+    transition:.25s;
+}
+
+.submenu{
+  margin: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size:1rem;
+  font-weight:100;
+  color: grey;
+  display: flex;
+  gap:4rem;
+  margin-top: 30px;
+}
+
+/*About*/
+
+
+
+*{
+    box-sizing:border-box;
+}
+
+
+.about-page-body {
+
+    box-sizing: border-box;
+}
+
+.about-page {
+    height: calc(100vh - 80px);
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.3fr 1.2fr 0.25fr;
+}
+
+
+
+.left-column{
+    
+    grid-column:1;
+
+    height: 100%;
+}
+
+.right-column{
+    grid-column:3;
+
+    height: 100%;
+}
+
+.profile-photo{
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+    height: auto;
+
+}
+
+.title{
+    margin-top: 20px;
+    font-size:1.7rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    transform:translateY(-40px);
+}
+
+.title2{
+    margin-top: 80px;
+    font-size:1.7rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    transform:translateY(-40px);
+}
+
+.abttext{
+    margin-top: 5px;
+    font-size:0.75rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    line-height: 1rem;
+    transform:translateY(-40px);
+}
+
+.contact{
+    margin-top: 1px;
+    font-size:0.8rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    line-height: 0.2rem;
+    transform:translateY(-30px);
+
+}
+
+
+/*Research*/
+
+.researchtitle{
+    margin-top: 20px;
+    font-size:1.7rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    transform:translateY(-10px);
+}
+
+.thesisimg{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: auto;
+}
+
+.thesislink{
+
+    font-size:0.8rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    line-height: 0.2rem;
+    
+}
+
+.researchtext{
+
+    margin-top: 5px;
+    font-size:0.75rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    line-height: 1.2rem;
+    transform:translateY(-20px);
+    color: #dfdfdf;
+
+}
+
+.research-page {
+    height: calc(100vh - 80px);
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.1fr 1.2fr 0.25fr;
+}
+
+
+/*Projects*/
+
+.projects-page-body {
+
+    box-sizing: border-box;
+}
+
+.projects-page{
+    padding:120px 20vw 60px;
+}
+
+.projects-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    column-gap:3vw; 
+    row-gap: 5vw;  
+
+}
+
+.project{
+    display:flex;
+    flex-direction:column;
+}
+.project-info{
+
+    text-align:center;
+
+    margin-top:1rem;
+}
+
+
+
+.project img{
+    width:100%;
+
+    aspect-ratio:1;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+
+
+.project-title{
+
+    font-size:1rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    color: #dfdfdf;
+ 
+}
+
+
+/*fractals*/
+
+.fractals-page-body {
+
+    box-sizing: border-box;
+}
+
+.fractals-page{
+    padding:120px 10vw 60px;
+
+    height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 1.2fr 0.2fr 1.2fr 0.25fr;
+}
+
+.fractalimg{
+  width: 26vw;
+  height:   auto;
+}
+
+.fractal-title{
+    font-size:6rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    color: #dfdfdf;
+}
+
+
+.fractal-year{
+    font-size:1rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    color: #dfdfdf;
+}
+
+.fractal-text{
+    font-size:1rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    color: #dfdfdf;
+}
+
+.fractal-tools{
+    font-size:1rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight:100;
+    letter-spacing:0.1px;
+    color: #dfdfdf;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
