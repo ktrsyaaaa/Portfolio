@@ -2116,6 +2116,103 @@ body{
 
 
 
+/* =========================================
+   SOCIAL MEDIA — MOBILE VERSION
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    /* -----------------------------------------
+       MOBILE TOPBAR
+       ----------------------------------------- */
+
+    .social-page-topbar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        height: 60px;
+        padding: 0;
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .social-page-topbar a {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-page-topbar img {
+        width: 45px;
+    }
+
+    .social-page-topbar span {
+        font-size: 11px;
+    }
+
+
+    /* -----------------------------------------
+       SOCIAL MEDIA PAGE
+       ----------------------------------------- */
+
+    .social-media-page {
+        width: 100%;
+
+        padding: 25px 20px 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 80px;
+    }
+
+
+    /* -----------------------------------------
+       EACH VIDEO
+       ----------------------------------------- */
+
+    .social-video {
+        width: 70vw;
+        max-width: 320px;
+
+        margin: 0;
+    }
+
+
+    /* -----------------------------------------
+       TITLE + YEAR
+       ----------------------------------------- */
+
+    .social-video-info {
+        width: 100%;
+
+        margin-bottom: 8px;
+
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+
+    /* -----------------------------------------
+       VIDEO
+       ----------------------------------------- */
+
+    .social-video iframe {
+        width: 100%;
+
+        aspect-ratio: 9 / 16;
+
+        display: block;
+
+        border: 0;
+    }
+
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
