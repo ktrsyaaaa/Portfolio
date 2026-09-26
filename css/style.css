@@ -2470,6 +2470,144 @@ body{
 
 }
 
+/* =========================
+   ALTERNATIVE ARCHIVE - MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    /* MOBILE TOPBAR */
+
+    .archive-page-body .topbar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        height: 60px;
+        padding: 0;
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .archive-page-body .topbar a {
+        width: 60px;
+        height: 60px;
+    }
+
+    .archive-page-body .topbar img {
+        width: 45px;
+    }
+
+    .archive-page-body .topbar span {
+        font-size: 11px;
+    }
+
+
+    /* PAGE */
+
+    .archive-content {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 25px 20px 100px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 70px;
+    }
+
+
+    /* DESCRIPTION */
+
+    .archive-description {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .altarchive-title {
+        font-size: 3rem;
+        line-height: 1;
+
+        margin: 0 0 15px 0;
+    }
+
+
+    .altarchive-year {
+        font-size: 0.75rem;
+
+        margin: 0 0 25px 0;
+
+        transform: none;
+    }
+
+
+    .altarchive-text {
+        font-size: 0.75rem;
+        line-height: 1.5;
+
+        margin: 0 0 15px 0;
+    }
+
+
+    .altarchive-tools {
+        font-size: 0.75rem;
+        line-height: 1.5;
+
+        margin: 0 0 8px 0;
+    }
+
+
+    /* SCANS */
+
+    .scan-list {
+        width: 100%;
+    }
+
+
+    .scan-grid {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 50px;
+
+        margin: 0;
+    }
+
+
+    /* EACH SCAN */
+
+    .scan-item {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .scan-item img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+    }
+
+
+    /* SCAN NAME */
+
+    .scan-name {
+        width: 100%;
+
+        margin-top: 8px;
+
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+}
+
 
 /* ==========================================================================
    Helper classes
