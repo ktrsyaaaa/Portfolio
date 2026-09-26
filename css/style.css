@@ -2116,9 +2116,10 @@ body{
 
 
 
-/* =========================================
-   SOCIAL MEDIA — MOBILE VERSION
-   ========================================= */
+
+    /* =========================
+    SOCIAL MEDIA - MOBILE
+    ========================= */
 
     @media (max-width: 700px) {
 
@@ -2127,8 +2128,10 @@ body{
             bottom: 0;
             left: 0;
             right: 0;
+
             height: 60px;
             padding: 0;
+
             grid-template-columns: repeat(4, 1fr);
         }
 
@@ -2146,9 +2149,12 @@ body{
         }
 
 
+        /* PAGE */
+
         .social-media-page {
             width: 100%;
             box-sizing: border-box;
+
             padding: 25px 20px 100px;
 
             display: flex;
@@ -2159,156 +2165,165 @@ body{
         }
 
 
+        /* EACH VIDEO */
+
         .social-video {
+            position: relative;
+
             width: 70vw;
             max-width: 320px;
-            box-sizing: border-box;
 
             margin: 0;
         }
 
 
-        .social-video-info {
-            width: 100%;
-            box-sizing: border-box;
+        /* TITLE + YEAR */
 
-            margin-bottom: 8px;
+        .social-video-info {
+            position: static;
+
+            width: 100%;
+
+            margin: 0 0 8px 0;
 
             font-size: 12px;
             line-height: 1.4;
 
-            text-align: left;
+            box-sizing: border-box;
         }
 
 
+        /* VIDEO */
+
         .social-video iframe {
-            display: block;
-
             width: 100%;
-            aspect-ratio: 9 / 16;
+            height: auto;
 
+            aspect-ratio: 966 / 1207;
+
+            display: block;
             border: 0;
         }
 
     }
 
-/* =========================================
-   AV_EARTH — MOBILE VERSION
-   ========================================= */
+    /* =========================================
+    AV_EARTH — MOBILE VERSION
+    ========================================= */
 
-@media (max-width: 700px) {
+    @media (max-width: 700px) {
 
-    /* -----------------------------------------
-       MOBILE TOPBAR
-       ----------------------------------------- */
+        /* -----------------------------------------
+        MOBILE TOPBAR
+        ----------------------------------------- */
 
-    .av-earth-page-topbar {
-        top: auto;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        .av-earth-page-topbar {
+            top: auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
 
-        height: 60px;
-        padding: 0;
+            height: 60px;
+            padding: 0;
 
-        grid-template-columns: repeat(4, 1fr);
-    }
+            grid-template-columns: repeat(4, 1fr);
+        }
 
-    .av-earth-page-topbar a {
-        width: 60px;
-        height: 60px;
-    }
+        .av-earth-page-topbar a {
+            width: 60px;
+            height: 60px;
+        }
 
-    .av-earth-page-topbar img {
-        width: 45px;
-    }
+        .av-earth-page-topbar img {
+            width: 45px;
+        }
 
-    .av-earth-page-topbar span {
-        font-size: 11px;
-    }
-
-
-    /* -----------------------------------------
-       PAGE
-       ----------------------------------------- */
-
-    .av_earth-page {
-        padding: 20px 20px 90px;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 60px;
-    }
+        .av-earth-page-topbar span {
+            font-size: 11px;
+        }
 
 
-    /* -----------------------------------------
-       PROJECT INTRO
-       ----------------------------------------- */
+        /* -----------------------------------------
+        PAGE
+        ----------------------------------------- */
 
-    .av_earth-project-hero {
-        width: 100%;
-        max-width: none;
-        margin: 0;
+        .av_earth-page {
+            padding: 20px 20px 90px;
 
-        display: flex;
-        flex-direction: column;
+            display: flex;
+            flex-direction: column;
 
-        gap: 35px;
-    }
+            gap: 60px;
+        }
 
 
-    /* THUMBNAIL FIRST */
+        /* -----------------------------------------
+        PROJECT INTRO
+        ----------------------------------------- */
 
-    .av_earth-project-hero .right-column {
-        order: 1;
-    }
+        .av_earth-project-hero {
+            width: 100%;
+            max-width: none;
+            margin: 0;
 
-    .av_earth-thumb {
-        width: 100%;
-        max-width: none;
+            display: flex;
+            flex-direction: column;
 
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-
-        display: block;
-    }
+            gap: 35px;
+        }
 
 
-    /* TEXT SECOND */
+        /* THUMBNAIL FIRST */
 
-    .av_earth-project-hero .left-column {
-        order: 2;
-    }
+        .av_earth-project-hero .right-column {
+            order: 1;
+        }
 
-    .av_earth-title {
-        font-size: 3rem;
-        line-height: 1;
+        .av_earth-thumb {
+            width: 100%;
+            max-width: none;
 
-        margin: 0 0 15px 0;
-    }
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
 
-    .av_earth-year {
-        font-size: 0.75rem;
+            display: block;
+        }
 
-        margin: 0 0 25px 0;
 
-        transform: none;
-    }
+        /* TEXT SECOND */
 
-    .av_earth-text {
-        font-size: 0.75rem;
-        line-height: 1.5;
+        .av_earth-project-hero .left-column {
+            order: 2;
+        }
 
-        margin: 0 0 15px 0;
-    }
+        .av_earth-title {
+            font-size: 3rem;
+            line-height: 1;
 
-    .av_earth-tools {
-        font-size: 0.75rem;
-        line-height: 1.5;
+            margin: 0 0 15px 0;
+        }
 
-        margin: 0 0 8px 0;
-    }
+        .av_earth-year {
+            font-size: 0.75rem;
+
+            margin: 0 0 25px 0;
+
+            transform: none;
+        }
+
+        .av_earth-text {
+            font-size: 0.75rem;
+            line-height: 1.5;
+
+            margin: 0 0 15px 0;
+        }
+
+        .av_earth-tools {
+            font-size: 0.75rem;
+            line-height: 1.5;
+
+            margin: 0 0 8px 0;
+        }
 
 
     /* -----------------------------------------
