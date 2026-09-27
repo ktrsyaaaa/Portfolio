@@ -2681,6 +2681,315 @@ body{
 }
 
 
+/* =========================
+   MOSAIC PAGE - MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    /* MOBILE TOPBAR */
+
+    .mosaic-page-body .topbar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 60px;
+
+        padding: 0;
+        box-sizing: border-box;
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .mosaic-page-body .topbar a {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mosaic-page-body .topbar img {
+        width: 45px;
+        max-width: 45px;
+    }
+
+    .mosaic-page-body .topbar span {
+        font-size: 11px;
+    }
+
+
+    /* PAGE */
+
+    .mosaic-page {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 20px 20px 100px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 60px;
+
+        overflow-x: hidden;
+    }
+
+
+    /* HERO */
+
+    .mosaic-project-hero {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 35px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* THUMBNAIL FIRST */
+
+    .mosaic-project-hero .right-column {
+        order: 1;
+
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mosaic-thumb {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        display: block;
+
+        box-sizing: border-box;
+    }
+
+
+    /* TEXT SECOND */
+
+    .mosaic-project-hero .left-column {
+        order: 2;
+
+        width: 100%;
+        max-width: 100%;
+
+        box-sizing: border-box;
+    }
+
+
+    .mosaic-title {
+        max-width: 100%;
+
+        font-size: 3rem;
+        line-height: 1;
+
+        margin: 0 0 15px 0;
+    }
+
+
+    .mosaic-year {
+        font-size: 0.75rem;
+
+        margin: 0 0 25px 0;
+
+        transform: none;
+    }
+
+
+    .mosaic-text {
+        max-width: 100%;
+
+        font-size: 0.75rem;
+        line-height: 1.5;
+
+        margin: 0 0 15px 0;
+    }
+
+
+    .mosaic-tools {
+        max-width: 100%;
+
+        font-size: 0.75rem;
+        line-height: 1.5;
+
+        margin: 0 0 8px 0;
+    }
+
+
+    /* ALL VIDEOS */
+
+    .mosaic-page .video-section {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+    .mosaic-page .video-wrapper {
+        position: relative;
+
+        width: 100%;
+        max-width: 100%;
+
+        aspect-ratio: 16 / 9;
+
+        box-sizing: border-box;
+    }
+
+    .mosaic-page .video-wrapper iframe {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        border: 0;
+    }
+
+
+    /* GALLERY */
+
+    .mosaic-page .gallery-section {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    .mosaic-grid {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        box-sizing: border-box;
+    }
+
+
+    .mosaic-project {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    .mosaic-grid img {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        display: block;
+
+        box-sizing: border-box;
+    }
+
+
+    /* PROCESS SECTION */
+
+    .mosaic-page .process-section {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* VERTICAL PROCESS VIDEO */
+
+    .mosaic-page .process-section .vertical-video {
+        width: 100%;
+        max-width: 100%;
+
+        aspect-ratio: 9 / 16;
+
+        overflow: hidden;
+
+        box-sizing: border-box;
+    }
+
+    .mosaic-page .process-section .vertical-video iframe {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        border: 0;
+    }
+
+
+    /* DIAGRAM */
+
+    .mosaic-page .diagram-image {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+    .mosaic-page .diagram-image img {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        display: block;
+
+        box-sizing: border-box;
+    }
+
+
+    /* FINAL VIDEO NOTE */
+
+    .mosaic-page .note {
+        font-size: 0.75rem;
+        line-height: 1.5;
+
+        margin: 0 0 10px 0;
+    }
+
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
