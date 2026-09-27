@@ -3375,6 +3375,231 @@ body{
 
 }
 
+/* =========================
+   FRACTALS PAGE - MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    /* MOBILE TOPBAR */
+
+    .fractals-page-body .topbar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 60px;
+
+        padding: 0;
+        box-sizing: border-box;
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .fractals-page-body .topbar a {
+        width: 60px;
+        height: 60px;
+    }
+
+    .fractals-page-body .topbar img {
+        width: 45px;
+        max-width: 45px;
+    }
+
+    .fractals-page-body .topbar span {
+        font-size: 11px;
+    }
+
+
+    /* PAGE */
+
+    .fractals-page {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 20px 20px 100px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        overflow-x: hidden;
+    }
+
+
+    /* HERO */
+
+    .fractals-page .project-hero {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* THUMBNAIL FIRST */
+
+    .fractals-page .project-hero .right-column {
+        order: 1;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .fractal-thumb {
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+        box-sizing: border-box;
+    }
+
+
+    /* TEXT SECOND */
+
+    .fractals-page .project-hero .left-column {
+        order: 2;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        box-sizing: border-box;
+    }
+
+    .fractal-title {
+        max-width: 100%;
+
+        font-size: 3rem;
+        line-height: 1;
+
+        margin: 0 0 15px 0;
+    }
+
+    .fractal-year {
+        font-size: 0.75rem;
+
+        margin: 0 0 25px 0;
+        transform: none;
+    }
+
+    .fractal-text {
+        max-width: 100%;
+
+        font-size: 0.75rem;
+        line-height: 1.5;
+
+        margin: 0 0 15px 0;
+        overflow-wrap: break-word;
+    }
+
+    .fractal-tools {
+        max-width: 100%;
+
+        font-size: 0.75rem;
+        line-height: 1.5;
+
+        margin: 0 0 8px 0;
+        overflow-wrap: break-word;
+    }
+
+
+    /* MAIN VIDEO */
+
+    .fractals-page .video-section {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+    .fractals-page .video-section iframe {
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+        aspect-ratio: 16 / 9;
+
+        border: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* GALLERY */
+
+    .fractals-page .gallery-section {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+    .fractals-grid {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        gap: 20px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* EACH IMAGE */
+
+    .fractal-project {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+    .fractals-grid img {
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
