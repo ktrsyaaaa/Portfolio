@@ -180,55 +180,109 @@ body{
     opacity: 1;
 }
 
-/*Home*/
+/* =========================
+   HOME
+   ========================= */
 
-.hero{
-    height:100vh;
+.hero {
+    height: 100vh;
 
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 
-    /* Move everything slightly above centre */
-    transform:translateY(-40px);
+    transform: translateY(-40px);
 }
 
-.name{
-    margin:0;
-    font-size:2rem;
+.name {
+    margin: 0 0 10px 0;
+
+    font-size: 2rem;
     font-family: "JetBrains Mono", monospace;
-    font-weight:100;
-    letter-spacing:0.1px;
-    transform:translateY(-40px);
-
+    font-weight: 100;
+    letter-spacing: 0.1px;
 }
 
-.menu{
-    display:flex;
-    gap:6rem;
-    margin-top:30px;
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 5rem;
+    margin: 0;
 }
 
-.menu img{
-    width:4rem;
-    height:auto;
+.menu img {
+    display: block;
 
-    transition:.25s;
+    width: 4rem;
+    height: auto;
+
+    transition: 0.25s;
 }
 
-.submenu{
-  margin: 0;
-  font-family: "JetBrains Mono", monospace;
-  font-size:1rem;
-  font-weight:100;
-  color: grey;
-  display: flex;
-  gap:4rem;
-  margin-top: 30px;
+.submenu {
+    margin: 15px 0 0 0;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1rem;
+    font-weight: 100;
+    color: grey;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 4rem;
 }
 
+
+/* =========================
+   HOME - MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        height: 100vh;
+        min-height: 500px;
+
+        padding: 20px;
+        box-sizing: border-box;
+
+        transform: translateY(-20px);
+    }
+
+    .name {
+        font-size: 1.5rem;
+        margin: 0 0 15px 0;
+    }
+
+    .menu {
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 2.5rem;
+    }
+
+    .menu img {
+        width: 3.2rem;
+        max-width: 3.2rem;
+    }
+
+    .submenu {
+        margin-top: 12px;
+
+        font-size: 0.75rem;
+
+        gap: 2.5rem;
+
+        justify-content: center;
+    }
+}
 /*About*/
 
 
