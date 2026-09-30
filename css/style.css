@@ -4059,32 +4059,29 @@ body{
 
     /* MOBILE TOPBAR */
 
-    .about-page-body .topbar {
+    .research-page-body .topbar {
         top: auto;
         bottom: 0;
         left: 0;
         right: 0;
-
         width: 100%;
         height: 60px;
-
         padding: 0;
         box-sizing: border-box;
-
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .about-page-body .topbar a {
+    .research-page-body .topbar a {
         width: 60px;
         height: 60px;
     }
 
-    .about-page-body .topbar img {
+    .research-page-body .topbar img {
         width: 45px;
         max-width: 45px;
     }
 
-    .about-page-body .topbar span {
+    .research-page-body .topbar span {
         font-size: 11px;
     }
 
@@ -4094,10 +4091,8 @@ body{
     .research-page {
         width: 100%;
         max-width: 100%;
-
         margin: 0;
         padding: 20px 20px 100px;
-
         box-sizing: border-box;
 
         display: flex;
@@ -4116,17 +4111,14 @@ body{
         width: 100%;
         max-width: 100%;
         min-width: 0;
-
         box-sizing: border-box;
     }
 
     .thesisimg {
         display: block;
-
         width: 100%;
         max-width: 100%;
         height: auto;
-
         box-sizing: border-box;
     }
 
@@ -4139,43 +4131,33 @@ body{
         width: 100%;
         max-width: 100%;
         min-width: 0;
-
         box-sizing: border-box;
     }
 
     .researchtitle {
         max-width: 100%;
-
         font-size: 2.5rem;
         line-height: 1;
-
         margin: 0 0 25px 0;
     }
 
     .researchtext {
         max-width: 100%;
-
         font-size: 0.75rem;
         line-height: 1.5;
-
         margin: 0 0 20px 0;
-
         overflow-wrap: break-word;
     }
 
     .thesislink {
         max-width: 100%;
-
         font-size: 0.75rem;
         line-height: 1.5;
-
         margin: 0;
-
         overflow-wrap: break-word;
     }
 
 }
-
 
 
 /* =========================
