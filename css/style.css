@@ -4224,14 +4224,13 @@ body{
 
 
     /* Flatten the two desktop columns */
-    .left-column,
-    .right-column {
+    .about-page-body .left-column,
+    .about-page-body .right-column {
         display: contents;
     }
 
-
     /* Image */
-    .profile-photo {
+    .about-page-body .profile-photo {
         order: 1;
 
         width: 180px;
@@ -4241,7 +4240,7 @@ body{
 
 
     /* Bio title */
-    .left-column .title {
+    .about-page-body .left-column .title {
         order: 2;
 
         margin-top: 0;
@@ -4252,7 +4251,7 @@ body{
 
 
     /* Bio text */
-    .left-column .abttext {
+    .about-page-body .left-column .abttext {
         order: 3;
 
         margin-top: 5px;
@@ -4264,7 +4263,7 @@ body{
 
 
     /* Artist Statement title */
-    .right-column .title2 {
+    .about-page-body .right-column .title2 {
         order: 4;
 
         margin-top: 50px;
@@ -4275,7 +4274,7 @@ body{
 
 
     /* Artist Statement text */
-    .right-column .abttext {
+    .about-page-body .right-column .abttext {
         order: 5;
 
         margin-top: 5px;
@@ -4287,7 +4286,7 @@ body{
 
 
     /* Contacts — last thing */
-    .about-contacts {
+    .about-page-body .about-contacts {
         order: 6;
 
         width: 100%;
@@ -4295,7 +4294,7 @@ body{
     }
 
 
-    .contact {
+    .about-page-bodyv .contact {
         margin-top: 1px;
         font-size: 0.75rem;
         line-height: 0.8rem;
