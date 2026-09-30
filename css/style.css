@@ -299,7 +299,7 @@ body{
 }
 
 .contact {
-    margin-top: 0 px;
+    margin-top: 0;
     font-size: 0.8rem;
     font-family: "JetBrains Mono", monospace;
     font-weight: 100;
@@ -308,12 +308,6 @@ body{
     transform: none;
 }
 
-.about-contacts {
-    grid-column: 1;
-    grid-row: 2;
-
-    margin-top: 20px;
-}
 
 /*Research*/
 
@@ -4175,6 +4169,11 @@ body{
 
 }
 
+
+
+/* =========================
+   About PAGE - MOBILE
+   ========================= */
 
 @media (max-width: 700px) {
 
