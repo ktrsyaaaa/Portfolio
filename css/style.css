@@ -4359,6 +4359,15 @@ body{
         transform: none;
     }
 
+        .about-contacts .contact a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .about-contacts .contact a:hover {
+        text-decoration: underline;
+    }
+
 }
 /* ==========================================================================
    Helper classes
